@@ -1,0 +1,17 @@
+{
+  "name": "lenis-smooth-scrolling",
+  "version": "1.0.0",
+  "description": "Exploring lenis smooth scrolling!",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "shohan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^0.2.9"
+  }
+}

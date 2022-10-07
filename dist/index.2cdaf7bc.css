@@ -1,0 +1,117 @@
+@import "https://fonts.googleapis.com/css2?family=Marcellus&display=swap";
+::selection {
+  color: #353535;
+  background-color: #ff4500;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #353535;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: #ff4500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  letter-spacing: 1px;
+  color: #353535;
+  background-color: #eaeaea;
+  font-family: Marcellus, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.logo {
+  color: #ff4500;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+hr {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+article {
+  max-width: 60vw;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: flex;
+}
+
+h2 {
+  font-size: 10rem;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: #ff4500;
+  font-size: 3.5rem;
+  text-decoration: none;
+  transition: color .3s linear;
+}
+
+a:hover {
+  color: #353535;
+}
+
+footer {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+@media screen and (max-width: 1440px) {
+  h2 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  article {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

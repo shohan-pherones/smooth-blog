@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+::selection {
+  background-color: #ff4500;
+  color: #353535;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #353535;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: #ff4500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Marcellus", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  background-color: #eaeaea;
+  color: #353535;
+  overflow-x: hidden;
+}
+
+.logo {
+  color: #ff4500;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+hr {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+article {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+h2 {
+  font-size: 10rem;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 3.5rem;
+  transition: color 0.3s linear;
+}
+
+a:hover {
+  color: #353535;
+}
+
+footer {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+@media screen and (max-width: 1440px) {
+  h2 {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  article {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
