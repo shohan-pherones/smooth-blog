@@ -16,8 +16,6 @@ function smoothScolling() {
     lenis.raf(time);
     requestAnimationFrame(raf);
   }
-
   requestAnimationFrame(raf);
 }
-
 smoothScolling();
