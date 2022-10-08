@@ -12,7 +12,6 @@
     "parcel": "^2.7.0"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^0.2.9",
-    "gsap": "^3.11.3"
+    "@studio-freight/lenis": "^0.2.9"
   }
 }
