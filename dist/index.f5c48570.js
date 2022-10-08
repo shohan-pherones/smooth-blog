@@ -535,18 +535,20 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _lenis = require("@studio-freight/lenis");
 var _lenisDefault = parcelHelpers.interopDefault(_lenis);
-const lenis = new (0, _lenisDefault.default)({
-    duration: 1.2,
-    easing: (t)=>t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-    direction: "vertical",
-    // gestureDirection: "vertical",
-    smooth: true
-});
-function raf(time) {
-    lenis.raf(time);
+function smoothScrolling() {
+    const lenis = new (0, _lenisDefault.default)({
+        duration: 1.2,
+        easing: (t)=>t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
+        direction: "vertical",
+        smooth: true
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
     requestAnimationFrame(raf);
 }
-requestAnimationFrame(raf);
+smoothScrolling();
 
 },{"@studio-freight/lenis":"ggVJc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ggVJc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
