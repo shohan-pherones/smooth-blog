@@ -542,7 +542,7 @@ const lenis = new (0, _lenisDefault.default)({
     gestureDirection: "vertical",
     smooth: true,
     smoothTouch: false,
-    touchMultiplier: 2
+    touchMultiplier: 5
 });
 const raf = function(time) {
     lenis.raf(time);
