@@ -536,16 +536,18 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _lenis = require("@studio-freight/lenis");
 var _lenisDefault = parcelHelpers.interopDefault(_lenis);
 const lenis = new (0, _lenisDefault.default)({
-    duration: 2,
-    easing: (x)=>1 - Math.pow(1 - x, 5),
+    duration: 1.2,
+    easing: (t)=>t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
     direction: "vertical",
     gestureDirection: "vertical",
-    smooth: true
+    smooth: true,
+    smoothTouch: false,
+    touchMultiplier: 2
 });
-const raf = function(time) {
+function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
-};
+}
 requestAnimationFrame(raf);
 
 },{"@studio-freight/lenis":"ggVJc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ggVJc":[function(require,module,exports) {
